@@ -1,4 +1,4 @@
-# Bank-Interface
+//Bank Interface
 #include "stdio.h"
 #include "stdlib.h"
 #include "util.h"
@@ -11,7 +11,6 @@ void welcome(){
         scanf("\n%d", &selection);
         printf("Your selection: %d\n", selection);
         switch (selection) {
-
             case 1:
                 printf("Balance = %d\n\n", money);
                 i = 0;
@@ -24,7 +23,6 @@ void welcome(){
                 printf("------------------INFORMATION--------------------\n");
                 printf("Previous Balance =%d\n", previousBalance);
                 printf("The Amount of Transfer = %d\n", amount);
-
                 printf("Recent Balance = %d\n", money);
                 if(money<0){ printf("YOU ARE IN DEBT!\n");}
                 printf("-------------------------------------------------\n");
@@ -55,22 +53,18 @@ void welcome(){
                             money -= 150;
                             printf("\nYour bill has been paid.\nCurrent Balance = %d\n", money);
                             j = 0;
-
                         } else if (payment == 2) {
                             money -= 300;
                             printf("\nYour bill has been paid.\nCurrent Balance = %d\n", money);
                             j = 0;
-
                         } else if (payment == 3) {
                             money -= 100;
                             printf("\nYour bill has been paid.\nCurrent Balance = %d\n", money);
                             j = 0;
-
                         } else if (payment == 4) {
                             money -= 120;
                             printf("\nYour bill has been paid.\nCurrent Balance = %d\n", money);
                             j = 0;
-
                         } else if (payment == 5) {j = 5;}else
                         { printf("Wrong Selection"); j = 0;}
                         }
